@@ -4,7 +4,7 @@ const connectDB = async () => {
   try {
     await mongoose.set("strictQuery", true);
     await mongoose.connect(
-      "mongodb://Aymeric:azerty123@localhost:27017/?authMechanism=DEFAULT&authSource=app",
+      "mongodb://localhost:27017",
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,
