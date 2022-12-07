@@ -4,16 +4,28 @@ var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 const cors = require("cors");
+const books = require('./models/books'); 
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 
+
+
 const mongodb = require("./config/config");
+const { default: mongoose } = require("mongoose");
 
 var app = express();
 
 mongodb();
 // view engine setup
+main().catch(err=> console.log(err));
+async function main() {
+// const collection = db.collection('books'); 
+
+// Create 
+
+}
+
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "jade");
 

@@ -9,9 +9,9 @@ const postUser = async () => {
   const password = document.getElementById("password").value;
 
   await axios.post("http://localhost:3000/users", {
-    name: name,
-    email: email,
-    password: password,
+    title: name,
+    author: email,
+    number: password,
   });
 };
 getUsers();
