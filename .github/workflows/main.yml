@@ -15,7 +15,10 @@ jobs:
         uses: supercharge/mongodb-github-action@1.8.0
         with:
           mongodb-version: '6.0.8'
-      - name: npm install, build, and test
+          mongodb-username: supercharge
+          mongodb-password: secret
+          mongodb-db: test
+      - name: npm build
         run: |
           npm ci
           npm run build --if-present
