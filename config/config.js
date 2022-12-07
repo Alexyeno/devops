@@ -4,7 +4,7 @@ const connectDB = async () => {
   try {
     await mongoose.set("strictQuery", true);
     await mongoose.connect(
-      "localhost:27017",
+      "mongodb://",
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,
