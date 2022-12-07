@@ -10,7 +10,7 @@ exports.getUsers = async (req, res, next) => {
 };
 
 exports.createUser = async (req, res, next) => {
-  console.log("je usis la");
+  console.log("je suis la");
   try {
     console.log(req.body);
     const user = await User.create(req.body);
