@@ -4,7 +4,7 @@ const connectDB = async () => {
   try {
     await mongoose.set("strictQuery", true);
     await mongoose.connect(
-      "mongodb://",
+      "mongodb://supercharge:secret@localhost:27017/test",
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,
